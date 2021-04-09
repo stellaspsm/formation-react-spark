@@ -1,5 +1,5 @@
-function ToDoItem(props, onDelete) {
-    const { id, title, completed } = props;
+function ToDoItem(task, onDelete) {
+    const { id, title, completed } = task;
 
     
   function handleDelete(event) {

@@ -1,3 +1,4 @@
+//On déstructure la props directement dans la déclaration de la fonction en parenthèses
 function TodoForm({ value, onValueChange, onAdd }) {
 
   function handleSubmit(event) {

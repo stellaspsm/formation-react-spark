@@ -2,8 +2,9 @@
 
 import ToDoItem from "./todoitem";
 
-function ToDoList(props, onDelete) {
-    const { tasks = [] } = props;
+//function ToDoList(props, onDelete) {
+function ToDoList(props) {
+    //const { tasks = [] } = props;
 
     /*const itemsJsx = tasks.map((task) => (
       <div className="ToDoItem" key={task.id}>
@@ -11,8 +12,8 @@ function ToDoList(props, onDelete) {
       </div>
     ));*/
 
-    const itemsJsx = tasks.map((task) => (
-      ToDoItem(task, onDelete)
+    const itemsJsx = props.tasks.map((task) => (
+      ToDoItem(task, props.onDelete)
     ));
 
     /*createItems() {
